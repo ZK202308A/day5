@@ -20,8 +20,8 @@ public class LottoMachine {
             int idx = (int)(Math.random() * 45);
             LottoBall temp = balls.get( idx );
 
-            System.out.println("-----------------------------------");
-            System.out.println(temp);
+//            System.out.println("-----------------------------------");
+//            System.out.println(temp);
 
             if(temp.marked == true){ //뽑힌적이 있다면
                 i--;

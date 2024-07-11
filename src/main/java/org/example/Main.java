@@ -3,6 +3,7 @@ package org.example;
 import org.example.bmi.BMIUI;
 import org.example.lotto.LottoBall;
 import org.example.lotto.LottoMachine;
+import org.example.lotto.LottoUI;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,18 +12,26 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<LottoBall> list = new ArrayList<>();
+        int[] scores = {74,32,45,25,78,89,45,59};
 
-        for (int i = 1; i <= 45; i++) {
-            LottoBall ball = new LottoBall(i);
-            list.add(ball);
-        }
+        int[] num2 = Ex1.choiceTwo(scores);
 
-        LottoMachine lottoMachine = new LottoMachine(list);
+        System.out.println(Arrays.toString(num2));
 
-        System.out.println(Arrays.toString(lottoMachine.selectBalls()));
-        System.out.println(Arrays.toString(lottoMachine.selectBalls()));
-        System.out.println(Arrays.toString(lottoMachine.selectBalls()));
+
+
+
+//        ArrayList<LottoBall> list = new ArrayList<>();
+//        for (int i = 1; i <= 45; i++) {
+//
+//            list.add(new LottoBall(i));
+//        }
+//        LottoMachine lottoMachine = new LottoMachine(list);
+//
+//        LottoUI lottoUI = new LottoUI(lottoMachine);
+//
+//        lottoUI.run();
+
 
 
 //        BMIUI ui = new BMIUI();
